@@ -1,11 +1,13 @@
 package com.sadadnan.page_indicator_view;
 
 import androidx.annotation.Nullable;
+
 import com.sadadnan.page_indicator_view.animation.AnimationManager;
 import com.sadadnan.page_indicator_view.animation.controller.ValueController;
 import com.sadadnan.page_indicator_view.animation.data.Value;
 import com.sadadnan.page_indicator_view.draw.DrawManager;
 import com.sadadnan.page_indicator_view.draw.data.Indicator;
+
 
 public class IndicatorManager implements ValueController.UpdateListener {
 

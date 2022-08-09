@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.sadadnan.pageindicatorviewdemo.R;
 import com.sadadnan.pageindicatorviewdemo.base.BaseActivity;
 import com.sadadnan.pageindicatorviewdemo.customize.CustomizeActivity;
 import com.sadadnan.pageindicatorviewdemo.data.Customization;

@@ -1,7 +1,7 @@
 ### **PageIndicatorView**
 An android library for indicators to use with Viewpager and Viewpager2
 
-##I have used codes from [this library](https://github.com/romandanylyk/PageIndicatorView), updated and added features on it
+## I have used codes from [this library](https://github.com/romandanylyk/PageIndicatorView), updated and added features on it
 
    1. Updated gradle Version
    2. Added Support for Viewpager2
@@ -18,26 +18,18 @@ An android library for indicators to use with Viewpager and Viewpager2
 
 ![](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/preview_anim_drop.gif)
 
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
-
-Once you make sure you have `jcenter` repository in your project, all you need to do is to add the following line in `dependencies` section of your project `build.gradle`.
+Once you make sure you have `maven` repository in your project, all you need to do is to add the following line in `dependencies` section of your project `build.gradle`.
  
-See latest library version [ ![Download](https://api.bintray.com/packages/romandanylyk/maven/pageindicatorview/images/download.svg) ](https://bintray.com/romandanylyk/maven/pageindicatorview/_latestVersion)
+See latest library version [![](https://jitpack.io/v/sad-adnan/PageIndicatorView.svg)](https://jitpack.io/#sad-adnan/PageIndicatorView)
 ```groovy
-implementation 'com.romandanylyk:pageindicatorview:X.X.X'
-```
-If your project already use `appcompat-v7` support library, you can omit `PageIndicatorView` dependencies by adding a single .aar file to your project, that will decrease total amount of methods used in your project.
-
-```groovy
-implementation 'com.romandanylyk:pageindicatorview:X.X.X@aar'
-```
-
-Keep in mind, that `PageIndicatorView` has min [API level 14](https://developer.android.com/about/dashboards/index.html) and these dependencies:
-
-```groovy
-implementation 'com.android.support:appcompat-v7:27.1.1'
-implementation 'com.android.support:recyclerview-v7:27.1.1'
-implementation 'com.android.support:support-core-ui:27.1.1'
+implementation 'com.github.sad-adnan:PageIndicatorView:Tag'
 ```
 
 ### **Usage Sample**
@@ -53,7 +45,7 @@ PageIndicatorView pageIndicatorView = findViewById(R.id.pageIndicatorView);
 But if you're as lazy as I'm - then there is another option to handle `PageIndicatorView` 
 
 ```xml
-     <com.rd.PageIndicatorView
+     <com.sadadnan.page_indicator_view.PageIndicatorView
         android:id="@+id/pageIndicatorView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
